@@ -101,7 +101,7 @@
                                         function copyToClipboard(text) {
                                             navigator.clipboard.writeText(text).then(function() {
                                                 var message = document.getElementById("copyMessage");
-                                                message.innerHTML = 'Посилання скопійовано: ' + text;
+                                                message.innerHTML = 'Скопійовано до буферу обміну: ' + text;
                                                 message.style.display = 'block';  // Показати повідомлення
                                                 setTimeout(function() {
                                                     message.style.display = 'none';  // Сховати повідомлення через 3 секунди
